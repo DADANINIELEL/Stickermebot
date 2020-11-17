@@ -2,9 +2,6 @@
 # os
 redis
 telebot
-time
-random
-typing
 
 
 # If you need to specify a version
