@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 import redis
 import os
-# This is a simple echo bot using the decorator mechanism.
-# It echoes any incoming text messages.
 from typing import Optional
-
 import telebot
 import time
 import random
@@ -22,9 +19,7 @@ bot = telebot.TeleBot(API_TOKEN)
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
-    bot.reply_to(message, """\
-Hola mi dueño se avergüenza de mi. 
-""")
+    bot.reply_to(message, "Hola mi dueño se avergüenza de mi.")
 
 @bot.message_handler(commands=['pole'])
 def toca_polear(message):
@@ -68,7 +63,3 @@ bot.polling()
 # If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
 # r = redis.from_url(os.environ.get("REDIS_URL"))
 
-#       Your bot code below
-# bot = telebot.TeleBot(token)
-# some_api = some_api_lib.connect(some_api_token)
-#              ...
