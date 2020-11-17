@@ -4,7 +4,7 @@ os
 telebot
 time
 random
-typing
+# typing
 
 
 # If you need to specify a version
