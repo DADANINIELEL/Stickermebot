@@ -1,10 +1,10 @@
 # List of required packages (Dependencies)
-# redis
 os
+redis
 telebot
 time
 random
-# typing
+typing
 
 
 # If you need to specify a version
