@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import redis
+#import redis
 import os
 from typing import Optional
 import telebot
