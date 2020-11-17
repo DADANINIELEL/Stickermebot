@@ -1,7 +1,8 @@
 # List of required packages (Dependencies)
 # os
 redis
-telebot
+# telebot
+pyTelegramBotAPI
 
 
 # If you need to specify a version
