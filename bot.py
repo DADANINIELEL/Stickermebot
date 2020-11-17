@@ -43,12 +43,4 @@ def echo_message(message):
         print(message.message_id)
         bot.reply_to(message, 'aquí la pole')
 
-
-
-
 bot.polling()
-
-
-
-# If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
-# r = redis.from_url(os.environ.get("REDIS_URL"))
