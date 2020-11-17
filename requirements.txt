@@ -1,5 +1,6 @@
 # List of required packages (Dependencies)
 redis
+os
 telebot
 time
 random

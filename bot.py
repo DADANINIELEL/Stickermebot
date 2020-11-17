@@ -49,17 +49,6 @@ def echo_message(message):
 bot.polling()
 
 
-# import telebot
-# import some_api_lib
-# import ...
-
-# Example of your code beginning
-#           Config vars
-
-
-# some_api_token = os.environ['SOME_API_TOKEN']
-#             ...
 
 # If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
 # r = redis.from_url(os.environ.get("REDIS_URL"))
-
