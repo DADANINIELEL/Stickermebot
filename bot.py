@@ -23,7 +23,7 @@ def send_welcome(message):
 	
 @bot.message_handler(commands=['users'])
 def fill_redis_users(message):
-    bot.reply_to(message, f"@{message[from_user][first_name]}")
+    bot.reply_to(message, f"@{message['from_user']['first_name']}")
 	
 
 
