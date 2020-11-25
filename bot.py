@@ -20,6 +20,12 @@ bot = telebot.TeleBot(API_TOKEN)
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
     bot.reply_to(message, "Hola mi dueño se avergüenza de mi.")
+	
+@bot.message_handler(commands=['users'])
+def fill_redis_users(message):
+    bot.reply_to(message, f"@{message[from_user][first_name]}")
+	
+
 
 @bot.message_handler(commands=['pole'])
 def toca_polear(message):
@@ -42,5 +48,7 @@ def echo_message(message):
         polear = False
         print(message.message_id)
         bot.reply_to(message, 'aquí la pole')
+
+
 
 bot.polling()
